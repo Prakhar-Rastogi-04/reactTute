@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.keep-center{
+  margin: 0 auto;
+}
+
+body {
+  background-image: url('https://wac-cdn.atlassian.com/devops/maturity-model/main/0/localUpload/devops-hero.png.png?cdnVersion=627');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: #0052CC !important; */
+  background-color: rgb(203, 207, 209) !important;;
+  min-height: 100vh;
+  overflow: visible;
+}
+.surveyHead {
+  border-top: 0.25rem solid rgb(237, 26, 61);
+  background-color: rgb(29, 52, 68);
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 1rem 1.875rem 0px;
+  color: #fff;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
