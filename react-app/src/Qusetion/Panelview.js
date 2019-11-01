@@ -1,5 +1,6 @@
-import React from'react';
+import React, {useState} from'react';
 import { Card, Button } from 'react-bootstrap';
+import  TabsView  from './TabView';
 import { CSSTransition } from 'react-transition-group';
 const panel = (props) => {
     // console.log('this ',this);
@@ -20,8 +21,11 @@ const panel = (props) => {
         //     transitionAppearTimeout={500}
         // >
         <div>
+           
         <Card key={props.questionId} style={{ width: '45rem', minHeight: 'auto' }} className="keep-center text-left">
+            
             <Card.Body>
+            <TabsView /> 
             {(props.qIndex+1 > 1) ? <div><button className="backBtn" onClick={this.pushBackQuestion}>back</button></div> : null }
                 <Card.Title>Question No. {props.qIndex+1}</Card.Title>
                 <Card.Text>

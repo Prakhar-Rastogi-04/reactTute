@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
-// import axiosService from './api/axiosService';
-// import logo from './logo.svg';
 import './App.css';
 
 // import Person from './Person/Person';
@@ -24,7 +23,6 @@ class App extends Component {
 
   componentDidMount() {
     async function makeRequest() {
-
       const configGet = {
           method: 'get',
           url: 'http://localhost:8080/survey-questions',
